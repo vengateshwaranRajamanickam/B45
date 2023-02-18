@@ -23,7 +23,7 @@ xho.onload=function(){
         pop.innerText=population;
         image.src=png;
         //let pic=(image.src=png);
-        console.log(image.src=png);  
+        //console.log(image.src=png);  
         console.log(area.innerText);  
         console.log(conti.innerText); 
         console.log(cap.innerText); 
@@ -35,3 +35,10 @@ xho.onload=function(){
         deo.appendChild(conti);
     });
 }
+
+
+// compare JSON of two object without order  
+let obj1={name:"APPLE",age:45};
+let obj2={age:45,name:"APPLE"};
+
+console.log(isEqualsJson(obj1,obj2));
