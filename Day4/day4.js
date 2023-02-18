@@ -67,7 +67,7 @@ xhs.onload=function(){
     console.log(xhs.status);
 } 
 */
-
+/*
 //create country flag from the data
 let xho=new XMLHttpRequest();
 xho.open("GET","https://restcountries.com/v3.1/all");
@@ -79,19 +79,24 @@ document.body.appendChild(deo);
 xho.onload=function(){
     let user=JSON.parse(xho.response);
     user.forEach(({continents,capital,region,population,flags})=>{
-    //for(let i=0;i<user.length;i++){
-        //let {flags}= user[i];
         let {png}=flags;
         let image=document.createElement('img');
         let conti=document.createElement('p');
         let cap=document.createElement('p');
         let pop=document.createElement('p');
         let area=document.createElement('p');
+        
         area.innerText=region;
         conti.innerText=continents;
         cap.innerText=capital;
         pop.innerText=population;
-        image.src= png;
+        image.src=png;
+        //let pic=(image.src=png);
+        console.log(image.src=png);  
+        console.log(area.innerText);  
+        console.log(conti.innerText); 
+        console.log(cap.innerText); 
+        console.log(pop.innerText); 
         deo.appendChild(image);
         deo.appendChild(pop);
         deo.appendChild(cap);
@@ -99,7 +104,7 @@ xho.onload=function(){
         deo.appendChild(conti);
     });
 }
-
+*/
 // block scope
 for(let i=0;i<5;i++){
 setTimeout(()=>{     //(IIFE)Immediately Invoked Function Expressions
@@ -117,19 +122,31 @@ let obj={nam:"raja",age:43,sex:"male"};
 console.log(obj.age);
 obj={...obj,age:61};
 console.log(obj.age);
-
+//rest operator
 let rank=add("raja","sum",43,35,343,34);
-function add(name,total,...arr){
+function add(name,average,...rest){
     let sum=0;
-    arr.forEach((value) => {
+    rest.forEach((value) => {
         sum+=value;
     });
-    //console.log(sum/(arr.length-2));
-    total=(sum/(arr.length-2));
-    //console.log(total);
-    return total;
+    //console.log(sum/(rest.length));
+    average=(sum/(rest.length));
+    //console.log(average);
+    return average;
 }
 console.log(rank);
-let rank1=[{nam:"raja",age:43,sex:"male"},{nam:"revi",age:98,sex:"male"}];
-let {nam}=rank1[0];
-console.log(nam);
+//rest operator for object
+//user.forEach(({continents,capital,region,population,flags})=>{
+
+//array destructing
+let rajasum=added("raja","sum",43,35,343,34);
+function added(...arrow){
+    let rt;
+    let total;
+    [rt,total,...rest1]=arrow;
+    console.log(rest1);
+} 
+//object destructing
+let ra={name:"raja",total:"sum",math:43,science:35,social:34};
+    let {math,science}=ra;
+    console.log(math);
