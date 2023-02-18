@@ -1,3 +1,4 @@
+/*
 let xhr=new XMLHttpRequest();
 xhr.open("GET","https://jsonplaceholder.typicode.com/posts");
 xhr.send();
@@ -69,11 +70,11 @@ xhr.onload=function(){
     }
     else
     console.log(xhr.status);
-} 
-/*
+} */
+
 //resume on json
-{
-  "basics": {
+var a=
+{ "basics": {
     "name": "Vengateshwaran",
     "label": "Programmer",
     "picture": "",
@@ -91,12 +92,32 @@ xhr.onload=function(){
     "company": "Multi Level Technology Company",
     "position": "IT Support",
     "website": "https://mlgroup.ae/",
-    "startDate": "2016-09-01",
+    "startDate": "2019-09-01",
     "endDate": "2022-12-01",
-    "summary": "Installation and configuration for Database, Switch and ATM.",
+    "summary": "Installation and configuration for Database, Switch and ATM",
     "highlights": [
-      "Started the company"
-    ]
+      "Configure ATM -connect it to branch network switch-configure in database" ]
+      
+  },{
+    "company": "Barrontech ",
+    "position":"Network Engineer",
+    "startDate": "2016-09-01",
+    "endDate": "2019-05-01",
+    "summary": "Configure and manage networking ",
+    "highlights": [
+      "Check and maintain branch networking" ]
+  }],
+  "certificates": [{
+    "name": "CCNA network associate Certificate",
+    "date": "2022-04-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "achievment": [{
+    "title": "Coordinator",
+    "date": "2022-03-01",
+    "awarder": "multilevel technology",
+    "summary": "managed a team of 25 member"
   }],
   "education": [{
     "institution": "Sastra University",
@@ -111,6 +132,10 @@ xhr.onload=function(){
     "level": "Entry",
     "keywords": ["HTML","CSS","Javascript"]
   }]
-}
-*/
+};
+console.log(a);
+let resume=document.createElement("p");
+document.body.appendChild(resume);
+
+
 
