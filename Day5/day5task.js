@@ -42,25 +42,33 @@ for(let j=0;j<prime.length;j++){
     primenumber.push(prime[j]);
 }
 console.log(...primenumber);
-*/
+
 //return all palindromes in array
 let palindromes=["motor","apple","mango","radar"];
 let ans=[];
-var k=0;
 palindromes.forEach((value)=>{
-    if(value.length/2!==0){
-    for(let i=0;i<value.length/2;i++){
-    for(let j=1;j<=value.length/2;j--){
-    if(value[i]===value[j])
-    k+=0
-    }
-    }
-    if(k===value.length/2)
+    let  arrValue = value.split ('');  
+    const reveArrVal = arrValue.reverse();     
+    const revString = reveArrVal.join('');  
+    if (value == revString)  
     ans.push(value);
-    }
+    else  
+    ans.push(value);
 });
-console.log(ans);
-/*
+console.log(palindromes);
+
+//return median of two sorted array of same size
+//let median1=[90,89,79,877,55];
+//let median2=[12,26,29,99,43];
+const median=(...arr)=>{
+    mid = Math.floor(arr.length/2);
+    num=[...arr].sort((a,b)=>a-b);
+    return (num.length% 2!==0) ? num[mid]: (num[mid]+num[mid-1])/2;
+  }
+  console.log(median(10,20,30,50,100,80));
+  console.log(median(80,90,120,110,269,786));
+
+
 //rotate an array by k times
 var rotate=["king ",234,"joy","lion"];
 var time= 5;
@@ -77,18 +85,18 @@ function change(value){
         //console.log(...value);
     }
 }
+*/
 //remove duplicate from array
 let duplicate=[332,7,7,17,44,7];
 let answer=[];
 for(let j=0;j<duplicate.length;j++){
-    let ans=true;
-     for(let i=1;i<=prime[j];i++){
-            if(duplicate[j]===duplicate[i])
-            ans=false;
+    let ans=0;
+     for(let i=0;i<duplicate.length;i++){
+            if(duplicate[j]===duplicate[i] && i!==j)
+            ans=1;
             break;
        }
-    if(ans===true)
-    answer.push(duplicate[j]);
+    if(ans===1)
+    [duplicate[j]].push();
 }
-console.log(...answer);
-*/
+console.log(answer);
