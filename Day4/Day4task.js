@@ -34,7 +34,7 @@ xho.onload=function(){
         deo.appendChild(conti);
     });
 }
-*/
+
 
 // compare JSON of two object without order  
 var isEqualsJson=(obj1,obj2)=>{
@@ -47,4 +47,4 @@ var isEqualsJson=(obj1,obj2)=>{
 let obj1={name:"APPLE",age:45};
 let obj2={age:45,name:"APPLE"};
 console.log(isEqualsJson(obj1,obj2));
- 
+ */

@@ -26,9 +26,10 @@ arr.forEach((value)=>{
 });
 console.log(sum);
 //find prime number of array
-let prime=[332,7,9,17,44];
-let primenumber=[];
-for(let j=0;j<prime.length;j++){
+const prime= function numberprime(...primenumber){
+    let prime,answer=[];
+    prime=primenumber;
+    for(let j=0;j<prime.length;j++){
     let ans=true;
     if(prime[j]>1){
         for(let i=2;i<=prime[j];i++){
@@ -38,9 +39,11 @@ for(let j=0;j<prime.length;j++){
        }
     }   
     if(ans===true)
-    primenumber.push(prime[j]);
+    answer.push(prime[j]);
 }
-console.log(...primenumber);
+return answer;
+}
+console.log(prime(332,7,9,17,44));
 //return all palindromes in array
 let palindromes=["motor","apple","mango","radar"];
 let ans=[];
