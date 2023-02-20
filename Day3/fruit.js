@@ -91,7 +91,7 @@ xhr.onload=function(){
     }
     else
     console.log(xhr.status);
-}        */
+}        
 {
   "basics": {
     "name": "John Doe",
@@ -210,3 +210,8 @@ xhr.onload=function(){
     "type": "application"
   }]
 }
+*/
+var age=3;
+console.log("age");
+let c=Math.pow(age,2);
+console.log(c);
