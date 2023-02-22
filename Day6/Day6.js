@@ -1,4 +1,4 @@
-/*
+
 //`use strict`;
 console.log(2=='2');
 function fun(){
@@ -76,18 +76,17 @@ let ubercustomer1=new uber("revi","revi@a,in",01234567,1234,50,2);
 //console.log(ubercustomer1.startjourney());
 //console.log(ubercustomer1.endjourney());
 console.log(ubercustomer1.Totalfair()); 
-*/
+
 
 //class for movie of PG value
-class movie{
+class movie {
     constructor(title,studio,rating){
-this.title=title;
-this.studio=studio;
-this.rating=rating;
-    }
-    PGonly(){
-        if(this.rating==="PG")
-        return this.title;
+    this.title=title;
+    this.studio=studio;
+    if(rating=="")
+    this.rating="PG";
+    else
+    this.rating=rating;
     }
     instant(){
         let inst =new Object();
@@ -96,24 +95,23 @@ this.rating=rating;
         inst.rating=prompt("enter rating");
         return inst
     }
-
-    
 }
-let Movie1= new movie("robo","sun picture","PG 13");
+let Movie1= new movie("robo","sun picture","PG13");
 let Movie2= new movie("2.0","lyca","PG");
-let Movie3= new movie("love today","ags","PG 18");
-let Movie4=new Object();
-Movie4= new movie("","","");
+let Movie3= new movie("love today","ags","PG8");
+let Movie4= new movie("","","");
+Movie4=Movie4.instant();
+
+let Movie=[Movie1,Movie2,Movie3,Movie4];
 let findPGmovie=[];
-findPGmovie[1]=Movie1.PGonly();
-findPGmovie[2]=Movie2.PGonly();
-findPGmovie[3]=Movie3.PGonly();
-findPGmovie[4]=Movie4.PGonly();
+Movie.forEach((value)=>{
+    if(value.rating=="PG")
+    findPGmovie.push(value.title);   
+    })
 console.log(findPGmovie);
-//console.log(Movie4.instant());
 
 
-/*
+
 //prototype to class for add variable and function
 class uberdemo{
     constructor(name){
@@ -145,4 +143,3 @@ Array.prototype.firstElement=(value)=>{
 let test=new Array();//[7,9,0];
 console.log(test.firstElement([34,55,32]));
 
-*/

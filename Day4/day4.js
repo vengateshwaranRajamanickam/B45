@@ -66,7 +66,7 @@ xhs.onload=function(){
     else
     console.log(xhs.status);
 } 
-*/
+
 
 //create country flag from the data
 let xho=new XMLHttpRequest();
@@ -104,15 +104,15 @@ xho.onload=function(){
         deo.appendChild(conti);
     });
 }
-
+*/
 // block scope
-// for(let i=0;i<5;i++){
-// setTimeout(()=>{     //(IIFE)Immediately Invoked Function Expressions
-//     console.log(i);
-// },1);
-// console.log("30");
-// }
-/*
+for(let i=0;i<5;i++){
+setTimeout(()=>{     //(IIFE)Immediately Invoked Function Expressions
+    console.log(i);
+},1);
+console.log("30");
+}
+
 //spread operator
 var arr=[];
 for(let i=4;i<10;i++){
@@ -151,4 +151,3 @@ function added(...arrow){
 let ra={name:"raja",total:"sum",math:43,science:35,social:34};
     let {math,science}=ra;
     console.log(math);
-*/

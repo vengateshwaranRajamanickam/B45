@@ -1,5 +1,5 @@
 //class for person totalmark 
-/*
+
 class person{
     constructor (name,rollnumber,maths,physics,chemistry){
 this.name=name;
@@ -57,4 +57,3 @@ this.tripid=tripid;
 let ubercustomer1=new uber("revi","revi@a,in",01234567,1234,50,2);
 console.log(ubercustomer1.startjourney());
 console.log(ubercustomer1.Totalfair()); 
-*/

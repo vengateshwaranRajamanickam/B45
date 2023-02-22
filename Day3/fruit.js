@@ -1,4 +1,4 @@
-/*
+
 var fruit=[
 {name:"banana",age:"89"},
 {name:"grape",age:"78"}
@@ -72,7 +72,7 @@ for (const property in object) {
   console.log(property);
   console.log(object[property]);
 }
-
+/*
 // create a xml http request
 let xhr=new XMLHttpRequest();
 xhr.open("GET","https://jsonplaceholder.typicode.com/posts");
