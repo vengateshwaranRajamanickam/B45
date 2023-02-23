@@ -16,20 +16,25 @@ xho.onload=function (){
         sortregion=value.capital;
         return sortregion;
     });
-    // ans3=user.filter(({currencies})=>{
-    //     //let currenciesid=new Array();
-    //     let {symbol}=currencies;
-    //     console.log(symbol);
-        //return currenciesid
+    ans3=user.filter(({currencies})=>{
+        //let currenciesid=new Array();
+        let {symbol}=currencies;
+        console.log(symbol);
+        return currenciesid
     });
-    // ans4=user.forEach(({name, capital, flag})=>{
-    //     console.log(name.common);
-    //     console.log(capital);
-
+    ans4=user.forEach(({name, capital, flags})=>{
+        let img=new Object();
+        console.log(name.common);
+        console.log(...capital);
+           let {png}=flags;
+           img.src=png;
+           console.log(png);  
+    });
 
     console.log(ans1);
     console.log(ans2);
     console.log(ans3);
+    console.log(ans4);
     // ans2=user.filter((value)=>{
     // if((value.population)<200000)
     // return value.countries ;       

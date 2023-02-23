@@ -1,0 +1,13 @@
+table,
+td{
+    border: 1px solid rgb(243, 9, 9);
+    border-collapse: collapse;
+    background-color: rgb(250, 215, 215);
+    color: blueviolet;
+}
+th{
+    border:2px solid rgb(14, 248, 45);
+    border-collapse: collapse;
+    background-color: rgba(171, 241, 7, 0.925);
+    color: brown;
+}  
