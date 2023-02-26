@@ -18,7 +18,8 @@ xho.onload=function (){
     ans1=user.filter(({continents})=>continents=="Asia");
     ans1=ans1.map((value)=>value.capital);
     ans2=user.filter(({population})=>population<200000);
-     ans3=user.filter(({currencies})=>currencies?.USD);
+    ans3=user.filter(({currencies})=>currencies?.USD);
+    ans3=ans3.map((value)=>value.capital);
     ans4=user.forEach(({name, capital, flags})=>{
         let img=new Object();
         console.log(name.common);
