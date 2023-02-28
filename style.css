@@ -1,1 +1,16 @@
-style
+.profileid{
+   font-weight: bold; 
+   background-image:url("./profile1.jpg");
+   background-size:contain;
+   height:400px;
+}
+.logo{
+    background-image: linear-gradient(green,red);
+}
+.profiledetails{
+    background-color: blueviolet;
+    color:white;
+}
+.tbox{
+    overflow: auto;
+}

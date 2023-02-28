@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<link href="style.css" ref="stylesheet"/>
 	<title>Registration for shaadi</title>
 </head>
 <body>
@@ -15,31 +15,32 @@
 			<li>upload candidate photo and personal details</li>
 			<li>complete the payment</li> 
 		</ol>
+		<section class="userdetail">
 	<P><b>1.</b></P>
 	<form action="next.php" method="post">
 	<div>
 		<label>First name</label>
-		<input type="text"name=firstname placeholder="First name">
+		<input type="text"name=firstname placeholder="First name" value="">
 	</div>
 	<br>
 	<div>
 		<label>Last name</label>
-		<input type="text"name=lastname Placeholder="Last name">
+		<input type="text"name=lastname Placeholder="Last name" value="">
 	</div>
 	<br>
 	<div>
 		<label>Phone number</label>
-		<input type="phonenumber"name=number Placeholder="0123456789">
+		<input type="phonenumber"name=number maxlength=10 Placeholder="0123456789" value="">
 	</div>
 	<br>
 	<div>
 		<label>Email</label>
-		<input type="Email" name=email Placeholder="A@a.ae">
+		<input type="Email" name=email Placeholder="A@a.ae" value="">
 	</div>
 	<br>
 	<div>
 		<label> Password</label>
-		<input type="Password"name=password>
+		<input type="Password"name=password value="">
 	</div>
 	<p><b>2.</b></p>
 	<div>
@@ -51,6 +52,11 @@
 	</select>
 	</div>	
 	<br>
+	<label>relationship</label>
+	<label>single</label>
+	<input type="radio" name=relationship vlaue="">
+	<label>married</label>
+	<input type="radio" name=relationship vlaue="">
 	<div>
 	<label>DOB</label>
 	<input type="date" name=Dob>
@@ -58,9 +64,10 @@
 	<br>
 	<div>
 	<label>About yourself</label>
-	<textarea></textarea>
+	<textarea class="tbox"> </textarea>
 	</div>
 	<br>
+</section>
 <input type="submit"name=submit value="submit">
 
 </body>
