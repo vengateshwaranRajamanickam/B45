@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="style.css" ref="stylesheet"/>
+	<link href="registrationstyle.css" ref="stylesheet"/>
 	<title>Registration for shaadi</title>
 </head>
 <body>
@@ -16,59 +16,48 @@
 			<li>complete the payment</li> 
 		</ol>
 		<section class="userdetail">
-	<P><b>1.</b></P>
-	<form action="next.php" method="post">
+	<b>1.</b><br>
+	<form  action="next.php" method="post">
 	<div>
 		<label>First name</label>
-		<input type="text"name=firstname placeholder="First name" value="">
-	</div>
+		<input type="text"name=firstname placeholder="First name" value="" required>
 	<br>
-	<div>
 		<label>Last name</label>
-		<input type="text"name=lastname Placeholder="Last name" value="">
-	</div>
+		<input type="text"name=lastname Placeholder="Last name" value="" required>
 	<br>
-	<div>
 		<label>Phone number</label>
-		<input type="phonenumber"name=number maxlength=10 Placeholder="0123456789" value="">
-	</div>
+		<input type="phonenumber"name=number maxlength=10 Placeholder="0123456789" value="" required>
 	<br>
-	<div>
 		<label>Email</label>
-		<input type="Email" name=email Placeholder="A@a.ae" value="">
-	</div>
+		<input type="Email" name=email Placeholder="A@a.ae" value=""required >
 	<br>
-	<div>
 		<label> Password</label>
 		<input type="Password"name=password value="">
-	</div>
-	<p><b>2.</b></p>
-	<div>
+	<br>
+	<b>2.</b>
+	<br>
 	<label>Geneder</label>
 	<select> name=sex</section>
 	<option value="male">Male</option>
 	<option value="women">Women</option>
 	<option value="other">Other</option>
 	</select>
-	</div>	
 	<br>
 	<label>relationship</label>
+	<br>
 	<label>single</label>
 	<input type="radio" name=relationship vlaue="">
 	<label>married</label>
 	<input type="radio" name=relationship vlaue="">
-	<div>
+	<br>
 	<label>DOB</label>
 	<input type="date" name=Dob>
-	</div>
 	<br>
-	<div>
 	<label>About yourself</label>
 	<textarea class="tbox"> </textarea>
 	</div>
 	<br>
 </section>
 <input type="submit"name=submit value="submit">
-
 </body>
 </html>
