@@ -21,3 +21,15 @@ th{
 #multiple{
     font-weight:bold;
 }
+.bgcolor{
+    border-style: dotted;
+}
+.bgcolor:hover{
+    background-color: red;
+}
+.clr:hover{
+    color:green;
+    background-color:white;
+
+}
+

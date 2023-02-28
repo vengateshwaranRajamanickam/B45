@@ -32,5 +32,5 @@ xho.onload=function (){
     console.log(ans1);
     console.log(ans2);
     console.log(ans3);
-   
+
 }
