@@ -10,17 +10,21 @@
 </head>
 <body>
     <section>
-        <div >
+        <form action="php" >
             <label>Name</label>
-            <input type="text" name=name value="" class="text" required/><br><br>
+            <input type="text" name=name value="" class="text" placeholder="name" required/><br><br>
             <label>Mobile Number</label>
-            <input type="number" name=mobilenumber value="" class="number"required/><br><br>
+            <input type="text" name=mobilenumber value="" class="number"  maxlength=10 placeholder="0123456789" required/><br><br>
             <label>Email id</label>
-            <input type="email" name=email value="" class="email"required/><br><br>
+            <input type="email" name=email value="" class="email" placeholder="A@a.ae" required/><br><br>
             <label>Reason</label>
-            <textarea name=reason value="" class="reason"required> </textarea><br><br>
-        </div>
+            <textarea name=reason value="" class="reason"  required> </textarea><br><br>
+            <input type="submit" name=submit value="submit"/>
+    
+    
+        </form>
     </section>
     <script src="jsm.js"></script>
+    <a href="https://google.com" target="blank">google</a>
 </body>
 </html>

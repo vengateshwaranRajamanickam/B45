@@ -1,5 +1,7 @@
-.text{
-    position:static;
-    right:30px;
-    background-color: brown;
+body{
+    background-color: blue;
 }
+a:hover{
+    color:rgba(147, 224, 22, 0.801)
+}
+
