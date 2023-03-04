@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Window Object</h1>
+<h2>The closed Property</h2>
+
+<p><button onclick="openWin()">Open "myWindow"</button></p>
+<p><button onclick="closeWin()">Close "myWindow"</button></p>
+<p><button onclick="checkWin()">Is "myWindow" closed?</button></p>
+
+<div id="demo"></div>
+
+<script>
+    let myWindow;
+
+    function openWin() {
+    myWindow = window.open("", "myWindow", "width=400,height=200");
+    }
+
+    function closeWin() {
+    if(myWindow){
+    myWindow.close();
+    }
+    }
+
+    function checkWin() {
+    var text = "";
+    if (!myWindow) {
+    text = "It has never been opened!";
+    } 
+    else
+    {
+  if (myWindow.open) { 
+    text = "It is open.";
+  } else{
+    text = "It is close.";
+  }
+    }
+    document.getElementById("demo").innerHTML = text;
+    }
+</script >
+<script src="./t.js"></script>
+</body>
+</html>

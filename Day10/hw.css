@@ -1,0 +1,17 @@
+div.relative{
+border-style: groove;
+}
+h1{
+    display: inline;
+    padding-left: 4px;
+    margin: 4px;
+
+}
+div.absolute{
+    position:relative;
+    top:0px;
+
+}
+.edit{
+    color:brown
+}
