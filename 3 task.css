@@ -1,0 +1,54 @@
+body{
+   background-color: grey;
+}
+.navbar{
+    height:50px;
+    color:white;
+}
+.header{
+    text-align:center;
+    padding:auto;
+}
+.form-control.right{
+  background-color:darkslategrey;
+  width:500px;
+  height:90%;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left:5%;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.form-control{
+  background-color:darkslategrey;
+  width:50%;
+  height: 50px;
+  position:fixed;
+  z-index: 1;
+  top: 100px;
+  right:5%;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left2{
+  background-color:darkslategrey;
+  width:auto;
+  height: 50px;
+  position:fixed;
+  top:300px;
+  margin-left: auto;
+  margin-right:auto;
+  
+}
+.left3{
+  background-color:darkslategrey;
+  width:50%;
+  height: 50px;
+  position:fixed;
+  bottom: 100px;
+  right:5%;
+  padding-top: 20px;
+}
