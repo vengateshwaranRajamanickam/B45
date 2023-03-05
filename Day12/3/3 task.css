@@ -12,7 +12,7 @@ body{
 .form-control.right{
   background-color:darkslategrey;
   width:500px;
-  height:90%;
+  height:600px;
   position: fixed;
   z-index: 1;
   top: 100px;
@@ -31,24 +31,44 @@ body{
   right:5%;
   overflow-x: hidden;
   padding-top: 20px;
+  text-align: center;
 }
 
-.left2{
+.form-control.left21{
   background-color:darkslategrey;
   width:auto;
   height: 50px;
   position:fixed;
   top:300px;
-  margin-left: auto;
-  margin-right:auto;
-  
+  right:600px;
+  text-align: center; 
 }
-.left3{
+.form-control.left22{
   background-color:darkslategrey;
-  width:50%;
+  width:auto;
   height: 50px;
   position:fixed;
-  bottom: 100px;
+  top:300px;
+  right:350px;
+  text-align: center;
+  
+}
+.form-control.left23{
+  background-color:darkslategrey;
+  width:auto;
+  height: 50px;
+  position:fixed;
+  top:300px;
+  right:100px;
+  text-align: center;
+  
+}
+.form-control.left3{
+  background-color:darkslategrey;
+  width:50%;
+  height: 150px;
+  position:fixed;
+  top:550px;
   right:5%;
-  padding-top: 20px;
+  text-align: center;
 }
