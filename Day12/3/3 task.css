@@ -1,0 +1,12 @@
+body{
+    background-color: grey;
+}
+.navbar navbar{
+    color :grey;
+}
+.navbar-brand{
+    text-align: center;
+}
+.leftarea{
+    background-color: grey;
+}
