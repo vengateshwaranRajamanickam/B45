@@ -1,0 +1,32 @@
+.calc{
+    background-color:grey;
+    width:auto;
+    height:50vh;
+    
+}
+.tarea{
+    border-width: 1px;
+    width: auto;
+    max-height: 10px;
+
+}
+.function {
+    border-style:hidden;
+    color:blue;
+}
+.number {
+    border-style:hidden;
+}
+.tarea{
+    text-align: left;
+    padding:auto;
+    margin-bottom: 1px;
+    
+}
+.submit{
+    background-color: blue;
+    color:white;
+}
+.clear{
+    color:red;
+}
