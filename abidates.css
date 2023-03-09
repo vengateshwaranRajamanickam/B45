@@ -1,0 +1,26 @@
+body{
+background-color:white;
+scroll-behavior: auto;
+}
+.d-block{
+    height:200px;
+    width:auto;
+}
+.d-block.active{
+    width:100%;
+}
+.card1{
+   left:10px;
+ }
+ .block1content{
+    text-align-last: left;
+}
+.card2{
+
+   right:10px; 
+  
+}
+.block2content{
+    text-align:start;
+
+}
