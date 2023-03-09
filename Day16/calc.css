@@ -1,0 +1,31 @@
+.calc{
+    background-color:grey;
+    width:auto;
+    height:50vh;
+    justify-content: center;
+    align-items: center;
+}
+.tareastyle{
+  
+}
+.function {
+   
+    color:blue;
+}
+.number {
+    
+    font-size: large;
+}
+.tarea{
+    text-align: left;
+    padding:auto;
+    margin-bottom: 1px;
+    
+}
+.submit{
+    background-color: blue;
+    color:white;
+}
+.clear{
+    color:red;
+}

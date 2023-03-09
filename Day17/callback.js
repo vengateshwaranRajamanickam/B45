@@ -48,3 +48,22 @@ let decrease=function(num,callback){
 }
 
 decrease(10,display)
+
+fetch("https://jsonplaceholder.typicode.com/users")
+.then((data)=>data.json())
+.then((res)=>res.forEach(({username}) => {
+    if(username.length>5)
+    console.log(username);
+}))
+.catch((err)=>console.log(err));
+
+let promise=new promise((resolve),(reject)=>{
+    setTimeout(()=>{
+        resolve(2); 
+    },2000)
+    })
+    promise(promise,promise1)
+    .then((num)=>console.log(num))
+    .catch((res)=>console.log(res))
+    
+   
