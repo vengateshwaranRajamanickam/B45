@@ -133,14 +133,72 @@
 // console.log((dec).toString(16));
 // console.log(Number(dec).toString(2));
 
-function userdetail(name,age){
-    console.log(name);
-    console.log(age);
-}
-function userinput(callback){
-    let a=prompt("enter your name");
-    let b=prompt("enter your age");
-    callback(a,b);
+// function userdetail(name,age){
+//     console.log(name);
+//     console.log(age);
+// }
+// function userinput(callback){
+//     let a=prompt("enter your name");
+//     let b=prompt("enter your age");
+//     callback(a,b);
 
+// }
+// userinput(userdetail);
+
+
+/*
+//create country flag from the data
+let xho=new XMLHttpRequest();
+xho.open("GET","https://restcountries.com/v3.1/all");
+xho.send();
+
+let deo=document.createElement("p");
+document.body.appendChild(deo);
+
+xho.onload=function(){
+    let user=JSON.parse(xho.response);
+    user.forEach(({continents,capital,region,population,flags})=>{
+        let {png}=flags;
+        let imag=document.createElement('img');
+        let conti=document.createElement('p');
+        let cap=document.createElement('p');
+        let pop=document.createElement('p');
+        let area=document.createElement('p');
+        
+        area.innerText=region;
+        conti.innerText=continents;
+        cap.innerText=capital;
+        pop.innerText=population;
+        imag.src=png;
+        console.log(png);  
+        console.log(area.innerText);  
+        console.log(conti.innerText); 
+        console.log(cap.innerText); 
+        console.log(pop.innerText); 
+        deo.appendChild(imag);
+        deo.appendChild(pop);
+        deo.appendChild(cap);
+        deo.appendChild(area);
+        deo.appendChild(conti);
+    });
+}*/
+createlist(value){
+   value.forEach(() => {
+    document.getElementById("id").value;
+   });
 }
-userinput(userdetail);
+
+fetch("https://restcountries.com/v3.1/all")
+.then((data)=>data.json())
+.then((continents)=>createlist(continents))
+    
+    let d=document.createElement("li");
+    d=continents(value)
+}
+addEventListener("click",()=>
+  
+}
+// let promise2A=fetch("https://openweathermap.org/")
+// .then((res)=>console.log(res))        
+// Promise.allSettled(promise1A,promise2A)
+

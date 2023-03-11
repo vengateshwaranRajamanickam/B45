@@ -57,13 +57,13 @@ fetch("https://jsonplaceholder.typicode.com/users")
 }))
 .catch((err)=>console.log(err));
 
-let promise=new promise((resolve),(reject)=>{
-    setTimeout(()=>{
-        resolve(2); 
-    },2000)
-    })
-    promise(promise,promise1)
-    .then((num)=>console.log(num))
-    .catch((res)=>console.log(res))
+//  let promise1=new Promise((resolve),(reject)=>{
+//         setTimeout(()=>{
+//             resolve(2); 
+//         },2000)
+//         }).then((res)=>console.log(res))
+    //  promise(promise,promise1)
+    // .then((num)=>console.log(num))
+    // .catch((res)=>console.log(res))
     
    
