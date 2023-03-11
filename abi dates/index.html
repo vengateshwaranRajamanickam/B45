@@ -10,6 +10,7 @@
     <link href="./abidates.css" rel="stylesheet">
 </head>
 <body>
+  <!--<img src="./abidates image/offer.jpg" id="offerpopup"alt="limited offer"/>-->
   
     <nav class="navbar navbar-expand-md navbar-light bg-dark"data-bs-theme="dark">
         <div class="container-fluid">
@@ -18,8 +19,10 @@
           <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div>
                 <a href="www.Abidate.com" target="_blank"><img src="./abidates image/logo.jpg"
                     width=25% title="Abidates"/></a>  
+                  </div>    
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -79,36 +82,51 @@
       </div>
     </section>
     <section class="block1">
-      
       <div class="row">
-      <div class="card col-lg-6 col-md-6 col-sd-8 " style="width: 18rem;">
+      <div class=" card col-lg-6 col-md-6 col-sd-8 " style="width: 18rem;">
         <img src="./abidates image/logo2.jpg" class="card-img-top" alt=".."> 
       </div>
-      <div class="block1content  col-lg-6 col-md-6 col-sd-8 ">
+      <span class=" block1content  col-lg-6 col-md-6 col-sd-8 ">
         Date trees reach up to 30 metres (100 feet) in height, growing singly or forming a clump with several stems from a single root system. 
         Slow-growing, they can reach over 100 years of age when maintained properly.[7] The roots have pneumatodes.
         [12] The leaves are 4–6 m (13–20 ft) long, with spines on the petiole, and pinnate, with about 150 leaflets. The leaflets are 30 centimetres (12 inches) long and 2 cm (1 in) wide. 
         The full span of the crown ranges from 6–10 m (20–33 ft).
-      </div>
-    </div>
-    
+      </span>
     </section>
     <section class="block2">
       <div class="row">
-      <div class="block2content  col-lg-6 col-md-6 col-sd-8">
+      <span class="block2content  col-lg-6 col-md-6 col-sd-8">
         Date trees reach up to 30 metres (100 feet) in height, growing singly or forming a clump with several stems from a single root system. 
         Slow-growing, they can reach over 100 years of age when maintained properly.[7] The roots have pneumatodes.
         [12] The leaves are 4–6 m (13–20 ft) long, with spines on the petiole, and pinnate, with about 150 leaflets. The leaflets are 30 centimetres (12 inches) long and 2 cm (1 in) wide. 
         The full span of the crown ranges from 6–10 m (20–33 ft).
-      </div>
+      </span>
       <div class="card2 col-lg-6 col-md-6 col-sd-8 " style="width: 18rem;">
           <img src="./abidates image/ven.jpg" class="card-img-top" alt=".."> 
       </div>
       </div>
     </section>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="./abidates.js"><</script>
+  <div id="homevideo" class="homevideo">
+    <video id="mainvideo" class="w-100" playsinline="playsinline" muted="muted" autoplay="autoplay"  loop="loop">
+            <source src="./sample-5s.mp4" type="video/mp4">
+    </video>
+  </div>
 
+  <button class="open-button" onclick="openForm()">Chat</button>
+  <div class="chat-popup" id="myForm" >
+    <form action="/action_page.php" class="form-container">
+      <h1>Chat</h1>
+  
+      <label for="msg"><b>Message</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+  
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+     
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="./abidates.js"></script>
+</body>
 </html>
