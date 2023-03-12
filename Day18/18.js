@@ -14,23 +14,10 @@
   })
  
 //});
-// document.addEventListener('DOMContentLoaded',()=>{
-//   const selectDrop=document.querySelector("countries")
-//   fetch("https://restcountries.com/v2/all").then((res)=>{res.json()
-//     .then((data)=>{
-//       let output="";
-//       data.forEach(({country}) => {
-//         output+=`<option>${country.names}</option>`
-//       })
-//       selectDrop.innerHTML=output;
-//     })
-//   })
-//     .catch((err)=>console.log(err))
-//     });
       
-    // fetch("https://openweathermap.org")
-    // .then((data)=>data.json())
-    // .then((continents)=>console.log(continents))
+    fetch("https://openweathermap.org")
+    .then((res)=>res.json())
+    .then((data)=>console.log(data))
     //document.body.getElementsByClassName(listregion).value.continents)
     // let g=document.getElementById("mylist");
     // function parameter(e){
