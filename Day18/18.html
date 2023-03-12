@@ -9,13 +9,14 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-   <select id="countries" class="countries"></select>
+   <select id="selectcountries" class="selectcountries" onchange="myFunction()"></select>
   <div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <span>Country code:</span><span id="xcode"class="card-text"></span><br>
+      <span>Region:</span><span id="xregion"class="card-text"></span><br>
+      <span>Capital:</span><span id="xcapital"class="card-text"></span><br>
+      <a href="https://openweathermap.org" target="_blank" btn btn-primary">Click for whether</a>
     </div>
   </div>
 <script src="./18.js"></script>
