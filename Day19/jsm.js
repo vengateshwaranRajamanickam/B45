@@ -86,22 +86,28 @@
 
 //document.body.style.backgroundColor="red";
 
-// var elem = document.getElementById("ssize");
+// function y(){
+//   return new Promise ((resolve,reject)=>setTimeout(()=>resolve(3),2000))
+//  }
+//  async function x(){
+//    console.log(await y());
+//  }
+// x();
+
+
 // function fullscreen(){
+//   var elem = document.body;
 //         elem.requestFullscreen();
 // }
 // function exitfullscreen(){
+//   var elem = document.getElementById("ssize");
 //     document.exitFullscreen();
 // }
 
-// const fullEl = document.querySelector(".full");
-
-// //const bodyEl = document.querySelector("body");
-
+//const fullEl = document.querySelector(".full");
+// const bodyEl = document.querySelector("body");
 // fullEl.click = JSON.parse(localStorage.getItem("mode"));
-
 // updateBody();
-
 // function updateBody() {
 //   if (fullEl.click) {
 //     window.fullscreen;
@@ -109,19 +115,16 @@
 //     window.exitfullscreen;
 //   }
 // }
-
-
 // fullEl.addEventListener("click", () => {
 //   updateBody();
 //   updateLocalStorage();
-
-// }); 
-
+// });
 // function updateLocalStorage() {
 //   localStorage.setItem("mode", JSON.stringify(inputEl.checked));
 //}
-// function gh(event){
-//     if(event.keyCode==32){
+
+// function gh(e){
+//     if(e.keyCode==32){
 //     alert("Thank You");
 //     window.close();}
 //     else
@@ -145,6 +148,13 @@
 // }
 // userinput(userdetail);
 
+// let grade='a';
+// switch (grade) {
+//   case'a':console.log("90-100");
+//   break;
+//   case 'b':console.log("80-90");
+//   break;
+// }
 
 /*
 //create country flag from the data
@@ -182,23 +192,3 @@ xho.onload=function(){
         deo.appendChild(conti);
     });
 }*/
-createlist(value){
-   value.forEach(() => {
-    document.getElementById("id").value;
-   });
-}
-
-fetch("https://restcountries.com/v3.1/all")
-.then((data)=>data.json())
-.then((continents)=>createlist(continents))
-    
-    let d=document.createElement("li");
-    d=continents(value)
-}
-addEventListener("click",()=>
-  
-}
-// let promise2A=fetch("https://openweathermap.org/")
-// .then((res)=>console.log(res))        
-// Promise.allSettled(promise1A,promise2A)
-
