@@ -4,6 +4,7 @@
   const selectDrop = document.getElementById('selectcountries');
   const xcap = document.getElementById('xcapital');
   const xreg = document.getElementById('xregion');
+  const xcode= document.getElementById('xcode');
   var lib;
 
   fetch('https://restcountries.com/v2/all').then(res=>{
@@ -24,6 +25,8 @@ function myFunction() {
   lib.forEach(value =>{
   if(value.name==x){
     xreg.innerText= value.region;
+    let {png}=value.flags;
+    xcode.innerText= value.alpha3Code;
    
   }
 })
