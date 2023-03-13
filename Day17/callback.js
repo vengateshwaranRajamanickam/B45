@@ -87,6 +87,17 @@ fetch("https://jsonplaceholder.typicode.com/users")
     //                     resolve(2); 
     //                 },2000)
     //                 }).then((res)=>console.log(res))
-    //             })    
+    //             })  
+    
+    
+//     const y=()=>{
+//         let promise=new Promise((resolve,reject)=>{
+//         setTimeout(()=>resolve(3),3000)
+//         })
+//         return promise;
+//     }
+//     async function x(){
+//         console.log(await y())
+//     }
 
-   
+//    x()
