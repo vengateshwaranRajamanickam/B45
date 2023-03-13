@@ -9,21 +9,26 @@ scroll-behavior: auto;
 .d-block.active{
     width:100%;
 }
-.card1{
-   left:10px;
- }
- .block1content{
-    text-align-last: left;
-    text
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
 }
-.card2{
 
-   right:10px; 
-  
+.container-fluid{
+  display: flex;
+  flex-direction: row;
 }
-.block2content{
-    text-align:start;
+.homevideo{
+  height: 400px;
+  width: 100%;
+  overflow:hidden;
 
+}
+.mainvideo{
+ min-width:auto;
+ min-height:auto;
+ 
 }
 .open-button {
     background-color: #555;
